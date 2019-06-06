@@ -1,6 +1,6 @@
 {% set name = "check-manifest" %}
-{% set version = "0.25" %}
-{% set sha256 = "b6ce4b65249d4ab5b5a3120af63b6e30e9fac849009e1ef8c5faedc30abf616a" %}
+{% set version = "0.39" %}
+{% set sha256 = "a4c555f658a7c135b8a22bd26c2e55cfaf5876e4d5962d8c25652f2addd556bc" %}
 
 package:
   name: "{{ name|lower }}"
