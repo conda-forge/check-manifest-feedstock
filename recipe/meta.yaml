@@ -32,7 +32,7 @@ about:
   home: https://github.com/mgedmin/check-manifest
   license: MIT
   license_family: MIT
-  license_file: LICENCE.rst
+  license_file: LICENSE.rst
   summary: Check MANIFEST.in in a Python source package for completeness
 
 extra:
