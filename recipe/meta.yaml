@@ -11,22 +11,29 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - check-manifest = check_manifest:main
 
 requirements:
   host:
+    - python >=3.5
     - pip
-    - python
   run:
-    - python
+    - python >=3.5
+    - pep517
     - setuptools
     - toml
 
 test:
+  imports:
+    - check_manifest
   commands:
+    - pip check
     - check-manifest --help
+  requires:
+    - pip
+
 
 about:
   home: https://github.com/mgedmin/check-manifest
