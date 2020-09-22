@@ -5,7 +5,7 @@ Home: https://github.com/mgedmin/check-manifest
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Check MANIFEST.in in a Python source package for completeness
 
