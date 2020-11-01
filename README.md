@@ -5,11 +5,9 @@ Home: https://github.com/mgedmin/check-manifest
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/check-manifest-feedstock/blob/master/LICENSE.txt)
 
 Summary: Check MANIFEST.in in a Python source package for completeness
-
-
 
 Current build status
 ====================
