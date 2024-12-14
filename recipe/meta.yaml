@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/check-manifest/check_manifest-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/c/check-manifest/check_manifest-{{ version }}.tar.gz
   sha256: d300f9f292986aa1a30424af44eb45c5644e0a810e392e62d553b24bb3393494
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - python-build >=0.1
     - setuptools
     - toml
@@ -34,6 +34,7 @@ test:
     - check-manifest --help
   requires:
     - pip
+    - python {{ python_min }}
 
 
 about:
