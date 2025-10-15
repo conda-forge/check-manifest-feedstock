@@ -1,4 +1,4 @@
-{% set version = "0.50" %}
+{% set version = "0.51" %}
 
 package:
   name: check-manifest
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/check-manifest/check_manifest-{{ version }}.tar.gz
-  sha256: d300f9f292986aa1a30424af44eb45c5644e0a810e392e62d553b24bb3393494
+  sha256: 9801c7637675755a563f33e3c48ee59a59b37a7677297c05c910c16c5b9b6d67
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
